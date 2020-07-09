@@ -1,0 +1,350 @@
+html {
+  scroll-behavior: smooth;
+}
+:root {
+  --color-primary-dark: #ff9c35;
+  --color-primary-light: #ffd019;
+  --color-dark: rgba(0, 0, 0, 0.9);
+  --color-gradient: linear-gradient(
+    to right,
+    var(--color-primary-dark),
+    var(--color-primary-light)
+  );
+}
+
+.nav-div {
+  border-bottom: 1px solid lightgray;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  font-size: 1.6rem;
+  color: var(--color-dark);
+}
+
+/* Global */
+
+.my-card {
+  padding: 3rem 1rem;
+  box-shadow: 0 10px 20px lightgray;
+  border-radius: 5px;
+}
+
+.buy-now-button {
+  background-color: var(--color-dark);
+  padding: 0.7rem 1.2rem;
+  border-radius: 5px;
+  color: #ffffff;
+  border: 2px solid var(--color-dark);
+
+  transition: all 0.4s ease;
+}
+
+.buy-now-button:hover {
+  border: 2px solid var(--color-dark);
+  background-color: #ffffff;
+  border-radius: 5px;
+  color: var(--color-dark);
+}
+
+.line {
+  height: 8px;
+  width: 130px;
+  border-radius: 25px;
+  background: var(--color-gradient);
+}
+
+.para {
+  font-size: 1.4rem;
+  margin-bottom: 5rem;
+}
+
+/* ///////////////////////////// */
+/* Header Section */
+/* ///////////////////////////// */
+
+/* Navbar */
+.header {
+  margin-top: 1rem;
+  background-image: url("../img/background-image(2).jpg");
+  background-size: 8%;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}
+
+.header .nav-item {
+  margin-left: 4rem;
+}
+
+.header .nav-item .nav-link {
+  color: var(--color-dark);
+  font-weight: 500;
+}
+
+.header .nav-item .nav-link:hover {
+  background-image: var(--color-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.header .nav-item.active {
+  background-image: var(--color-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Carousel  */
+
+.carousel-header {
+  font-size: 4rem;
+  margin-bottom: 2.5rem;
+}
+
+.carousel-item {
+  margin-bottom: 4rem;
+  background-image: url("../img/background-image\(1\).jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 8%;
+  background-position: 41% 55%;
+}
+
+.carousel-indicators li {
+  height: 8px;
+  width: 12px;
+  background-color: grey;
+  border: none;
+  border-radius: 6px;
+}
+.carousel-indicators li.active {
+  height: 8px;
+  width: 30px;
+  background-image: var(--color-gradient);
+  border-radius: 6px;
+}
+
+/* ///////////////////////////// */
+/* Product Section */
+/* ///////////////////////////// */
+
+#product {
+  margin: 10rem 0;
+}
+
+#product .card-deck {
+  margin-top: 2.5rem;
+  margin-bottom: 10rem;
+}
+#product .card-deck .card {
+  border: none;
+  padding: 3rem;
+  text-align: center;
+
+  box-shadow: 5px 10px 30px lightgrey;
+  border-radius: 5px;
+}
+
+#product .card-deck .card .card-title {
+  margin: 1.5rem 0;
+}
+#product .card-deck .card .card-text {
+  font-size: 1.4rem;
+  margin-bottom: 3rem;
+}
+
+#product .card-deck .card .card-footer {
+  border: none;
+  background-color: transparent;
+}
+
+#product .see-all {
+  background-image: var(--color-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ////////////////////////// */
+/* Category section */
+/* ////////////////////////// */
+
+#category {
+  margin: 10rem 0;
+}
+
+#category .row {
+  padding-top: 2rem;
+}
+#category .box {
+  height: 230px;
+  width: 230px;
+  box-shadow: 0 5px 10px lightgray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+  padding-top: 5rem;
+
+  border-radius: 30px 0px 30px 0px;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+#category .box:hover {
+  transform: scale(1.01);
+  box-shadow: 5px 10px 20px lightgray;
+}
+
+#category .box.first-box {
+  border-radius: 0px 30px 0px 30px;
+}
+
+#category .category-image img {
+  transition: all 0.4s ease-in-out;
+}
+
+#category .category-image img:hover {
+  transform: scale(1.1);
+}
+
+/* .box:first-of-type {
+    background-color: red;
+} */
+
+#category .box .para {
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+
+#category #category-image {
+  width: 650px;
+}
+
+/* ///////////////////////////// */
+/* About us section */
+/* ///////////////////////////// */
+
+#about-us {
+  margin: 10rem 0;
+}
+
+#about-us p {
+  font-size: 1.5rem;
+}
+
+/* ///////////////////////////// */
+/* Contact us section */
+/* ///////////////////////////// */
+
+#contact-us {
+  margin: 10rem 0;
+}
+
+.map-container {
+  height: 250px;
+  position: relative;
+}
+
+.map-container iframe {
+  left: 0;
+  top: 0;
+  height: 350px;
+  width: 100%;
+  position: absolute;
+}
+
+.name {
+  color: var(--color-primary-dark);
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 1rem;
+
+  transition: all 0.2s;
+}
+.name:hover {
+  box-shadow: 0 1rem 2rem lightgray;
+  transform: rotate(5deg) scale(1.1);
+  text-decoration: none;
+
+  padding: 0 1rem;
+  background-image: var(--color-gradient);
+  color: whitesmoke;
+  border-radius: 2px;
+}
+
+#contact-us .form-group input {
+  font-size: 1.6rem;
+}
+
+#contact-us .form-group textarea {
+  font-size: 1.6rem;
+  height: 80px;
+}
+#contact-us .form-control {
+  height: 36px;
+}
+
+/* Animations */
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+footer {
+  padding: 20px 10px;
+  background-color: var(--color-primary-dark);
+}
